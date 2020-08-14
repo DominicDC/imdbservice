@@ -1,11 +1,12 @@
+<h4><b>Project Overview:</b></h4>
 <pre>
 <b>Project Name:</b> ImdbService
-<b>Description:</b> A collection of RESTful services to download feed from IMDB, persist it and re-compute ratings based on usecase   
+<b>Description:</b> A collection of RESTful services to download feed from IMDB, persist it and re-compute ratings based on case study   
 <b>Tech stack:</b> Spring Boot (REST) + POSTGRES + FLYWAY (migration) + Spring JPA (ORM: Hibernate) + Spring HATEOAS
 </pre>
 
-<pre>
 <h4><b>Case Study:</b></h4>
+<pre>
 1. Build an application which pulls movies, their ratings, and cast lists from IMDB.
    <b>NOTE:</b> <i>To limit scope, please pull only movies released in 2017</i> 
 2. Persist the feed into POSTGRES DB for verification
