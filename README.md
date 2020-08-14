@@ -21,3 +21,9 @@
 3. <b>Testing via POSTMAN:</b> Import "ImdbService.postman_collection.json" collection into POSTMAN
 4. <b>Testing via curl command:</b> Execute commands from file "CurlCommands"
 </pre>
+
+<h4>What's next on plate:</h4>
+<pre>
+1. Caching without reload 
+2. Client library
+</pre>
