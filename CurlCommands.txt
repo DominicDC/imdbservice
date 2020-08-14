@@ -1,0 +1,23 @@
+##1. Download feed service
+curl -X GET http://localhost:8080/v1/imdb/download 
+ -H 'Accept: */*' 
+ -H 'Accept-Encoding: gzip, deflate' 
+ -H 'Cache-Control: no-cache' 
+ -H 'Connection: keep-alive' 
+ -H 'Host: localhost:8080' 
+ -H 'cache-control: no-cache'
+
+##2. Update rating service 
+curl -X PUT http://localhost:8080/v1/imdb/update 
+ -H 'Accept: */*' 
+ -H 'Accept-Encoding: gzip, deflate' 
+ -H 'Cache-Control: no-cache' 
+ -H 'Connection: keep-alive' 
+ -H 'Content-Length: 47' 
+ -H 'Content-Type: application/json' 
+ -H 'Host: localhost:8080' 
+ -H 'cache-control: no-cache' 
+ -d '{
+ "id":"tt6972580",
+ "avgRating":"1.0"
+}'
