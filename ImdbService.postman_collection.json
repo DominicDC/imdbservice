@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "0f1fdd49-6f92-4abd-a7a1-471e8a38e906",
+		"name": "ImdbService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Download feed service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/imdb/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"imdb",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update rating service",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"tt6972580\",\n    \"avgRating\":\"1.0\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/imdb/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"imdb",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
